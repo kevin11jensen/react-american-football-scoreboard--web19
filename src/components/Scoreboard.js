@@ -50,7 +50,11 @@ export default function Scoreboard() {
                 <button 
                 onClick = {homeFg}
                 className="homeButtons__fieldGoal">Home Field Goal</button>
+                <button 
+                onClick = {() => {setValueHome(0)}}>Reset Home</button>
                 </div>
+                
+                
                 <div className="awayButtons">
                 <button 
                 onClick = {awayTd}
@@ -58,6 +62,8 @@ export default function Scoreboard() {
                 <button 
                 onClick = {awayFg}
                 className="awayButtons__fieldGoal">Away Field Goal</button>
+                <button 
+                onClick = {() => {setValueAway(0)}}>Reset Away</button>
                 </div>
             </section>
         </div>
